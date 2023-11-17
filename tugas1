@@ -1,0 +1,20 @@
+# 1
+def kelvinToCelcius(temperature):
+    return temperature - 273
+def celciusToKelvin(temperature):
+    return temperature + 273
+
+# 2
+def convertToFahrenheit(temperature, type):
+    if type == "celcius":
+        return (9/5 * temperature) + 32
+    elif type == "kelvin":
+        return ((5/9) * temperature - 32) - 273
+
+
+# 3
+def convertFromFahrenheit(temperature, type):
+    if type == "celcius":
+        return (5/9 * temperature) - 32
+    elif type == "kelvin":
+        return ((5/9) * temperature - 32) + 273
